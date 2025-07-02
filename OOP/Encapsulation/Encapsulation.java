@@ -7,38 +7,69 @@ import java.util.Scanner;
   Hiding Data
 */
 
-class Person {
-    private String fullName;
+public class Teacher {
+    private String name, address;
+    private int age;
+    private double salary;     
 
-    // Setter for single name
-    public void setName(String name) {
-        this.fullName = name;
+    // Constructor
+    public Teacher(String name, String address, int age, double salary) {
+        this.name = name;
+        this.address = address;
+        this.age = age;
+        this.salary = salary;
     }
 
-    // Setter for first name and last name
-    public void setName(String FirstName, String LastName) {
-        this.fullName = FirstName + " " + LastName;
-    }
-
-    // Getter
+    // Getter & Setter for name
     public String getName() {
-        return fullName;
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Overloaded setter (two names)
+    public void setName(String name1, String name2) {
+        this.name = name1 + " " + name2;
+    }
+
+    // Other Getters & Setters
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Teacher t = new Teacher("Donald Trump",
+                "Washington DC",
+                79, 1000);
+        
+        t.setName("George Bush");
+        System.out.println(t.getName());
+
+        t.setName("Mohd.", "Yunus");
+        System.out.println(t.getName());
     }
 }
-
-public class Main {
-    public static void main(String[] args) {
-        // Scanner input = new Scanner(System.in);
-
-        // single name
-        Person p1 = new Person();
-        p1.setName("Masum");
-        System.out.println("Full Name: " + p1.getName());
-
-        // separate names and merge it
-        Person p2 = new Person();
-        p2.setName("Masum", "Ahmed");
-        System.out.println("Full Name: " + p2.getName());
-    }
-}
-
