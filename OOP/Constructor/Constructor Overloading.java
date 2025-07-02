@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /*
  Constructor Overloading
+ Use same Constuctor but there are different Parameter List
 */
 
 class Case {
