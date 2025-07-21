@@ -22,7 +22,7 @@ class B extends A {
 
 public class Main {
     public static void main(String[] args) {
-        // Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         B object = new B();
         object.show();
