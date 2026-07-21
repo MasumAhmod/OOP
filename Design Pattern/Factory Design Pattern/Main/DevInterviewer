@@ -1,0 +1,13 @@
+
+package com.mycompany.factory_design_pattern;
+
+/**
+ *
+ * @author Masum
+ */
+public class DevInterviewer implements Interview{
+    @Override
+    public void askQuestions() {
+        System.out.println("Ask development related question.");
+    }
+}
