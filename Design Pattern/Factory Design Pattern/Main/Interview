@@ -1,0 +1,10 @@
+
+package com.mycompany.factory_design_pattern;
+
+/**
+ *
+ * @author Masum
+ */
+public interface Interview {
+    void askQuestions();
+}
