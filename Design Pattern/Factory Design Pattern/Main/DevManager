@@ -1,0 +1,13 @@
+
+package com.mycompany.factory_design_pattern;
+
+/**
+ *
+ * @author Masum
+ */
+public class DevManager implements HiringManager{
+    @Override
+    public Interview createInterview() {
+        return new DevInterviewer();
+    }
+}
