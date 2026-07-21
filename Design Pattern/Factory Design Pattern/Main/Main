@@ -7,6 +7,8 @@ package com.mycompany.factory_design_pattern;
 public class Factory_Design_Pattern {
 
     public static void main(String[] args) {
-        System.out.println(Hello World!);
+        HiringFactory  factory = new HiringFactory();
+        Interview interview = factory.requestInterview("Dev");
+        interview.askQuestions();
     }
 }
